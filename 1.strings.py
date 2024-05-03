@@ -57,9 +57,9 @@ print({language.rstrip()})
 print({language.lstrip()})
 print({language.strip()})
 
-
+# Использование апострофа (') с двойнми и одинарными кавычнами
 var = "One of Python's strengths is its diverse community"
 print(var)
-
+# При использовании апострофа (') с одинарными кавычками апостроф необходимо заэкранировать (\')
 var = 'One of Python\'s strengths is its diverse community'
 print(var)
