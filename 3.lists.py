@@ -45,7 +45,7 @@ print(f'Bez sortirovki:', motorcycles)
 print(f'Vremennaya obratnaya sortirovka:', sorted(motorcycles, reverse=True))
 
 """
-
+# For cycle
 magicians = ['alice', 'david', 'carolina']
 for magician in magicians:
     print(f'{magician.title()}, that was a great trick!')
@@ -55,5 +55,15 @@ while len(magicians) != 0:
     popped_list = [magicians.pop()]
 
     print(popped_list)
-print("Thank you, everyone. That was a great magic show!")
+print("Thank you, everyone. That was a great magic show!\n")
 
+pizzas = ['Carbonara', 'Diablo', 'Barbequ', 'Margarita']
+end_message = f'I really love pizza!'
+for pizza in pizzas:
+    print(f'I like {pizza.lower()} pizza.')
+print(f'{end_message}\n')
+
+animals = ['cat', 'tiger', 'cougar']
+for an in animals:
+    print(f"A {an} belongs to the cat family.")
+print('Any of these animals love meat')
