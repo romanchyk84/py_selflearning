@@ -94,3 +94,17 @@ print(players[0:7:5])
 for player in players[0:4]:
     print(player.title())
 
+# Копирование списков
+my_meal = ['pizza', 'pelmeni', 'plov', 'borsch', 'apple cake']
+print(f"My favorite meal are:", my_meal)
+# Copy my list of meal to friend's list
+friend_meal = my_meal[:]
+print(f"My friend's favorite meal:", friend_meal)
+
+print(id(my_meal))
+print(id(friend_meal))
+
+my_meal.append('meatballs')
+friend_meal.append('shawarma')
+print(my_meal)
+print(f'\n',friend_meal)
