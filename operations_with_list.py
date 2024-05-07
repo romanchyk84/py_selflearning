@@ -121,4 +121,27 @@ print(f'\nAnd the last three elements in the list are:')
 for name in new_list[-3:]:
     print(name.title())
 
+print(f"\n*** The End ----- The End ----- The End ----- The End ***\n")
 
+
+my_pizzas = ['Carbonara', 'Diablo', 'Barbequ', 'Margarita']
+friend_pizzas = my_pizzas[:]
+my_pizzas.append('Peperoni')
+friend_pizzas.append('4 сыра')
+print(f'My favorite pizzas are:')
+for pizza in my_pizzas:
+    print(f'\t{pizza.title()}')
+print(f"\nAnd my friend's favorite pizzas are:")
+for pizza in friend_pizzas:
+    print(f'\t{pizza.title()}')
+print("These are 2 different lists")
+print(f"My pizzas list id is:      ", id(my_pizzas))
+print(f"Friend's pizzas list id is:", id(friend_pizzas))
+
+print(f'\n Prosto rabota s tsyclom FOR')
+foods = ['pizza', 'falafel', 'carrot cake', 'cannoli', 'ice cream']
+print(f'\nThe list of foods:')
+for food in foods:
+    print(f'\t*** {food.title()} ***')
+
+print('\n*** THE END ***')
