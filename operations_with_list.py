@@ -106,5 +106,5 @@ print(id(friend_meal))
 
 my_meal.append('meatballs')
 friend_meal.append('shawarma')
-print(my_meal)
-print(f'\n',friend_meal)
+print(f"My new meal list is:", my_meal)
+print(f"Friend's new meal list is:", friend_meal)
