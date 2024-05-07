@@ -108,3 +108,17 @@ my_meal.append('meatballs')
 friend_meal.append('shawarma')
 print(f"My new meal list is:", my_meal)
 print(f"Friend's new meal list is:", friend_meal)
+print(f'*** the end ----- the end ----- the end ***\n')
+
+new_list = ['roman', 'ilona', 'alexander', 'maks', 'olya', 'masha', 'alyona', 'oleg', 'natasha']
+print('The first three elements in the list are:')
+for name in new_list[0:3]:
+    print(name.title())
+print(f'\nThree elements from the middle of the list are:')
+for name in new_list[3:6]:
+    print(name.upper())
+print(f'\nAnd the last three elements in the list are:')
+for name in new_list[-3:]:
+    print(name.title())
+
+
