@@ -1,4 +1,4 @@
-"""
+
 colors = ['green', 'yellow', 'red']
 color = 'green'
 if color in colors:
@@ -29,7 +29,7 @@ else:
 print('\n', '*** This part of the code is finished ***'*2, '\n')
 
 tsveta = ['green', 'yellow', 'red']
-tsvet = 'yellow'
+tsvet = 'magenta'
 if tsvet in tsveta:
     if tsvet == 'green':
         print(f'{tsvet} player won 5 points!')
@@ -41,7 +41,7 @@ else:
     print(f'{tsvet}, this color is not in the list')
 
 print('\n', '*** This part of the code is finished ***'*2, '\n')
-"""
+
 
 age = int(input("Input age (for example, 2):"))
 if age >= 0 and age < 2:
@@ -80,3 +80,18 @@ for age, (down, up) in ages.items():
         print(f"Ваш возраст соответствует категории: {age.title()}")
 
 print('\n', '*** This part of the code is finished ***'*2, '\n')
+
+fav_fruits = ['banana', 'apple', 'pear', 'orange']
+fruit = input("Enter you favourite fruit:")
+if 'banana' in fav_fruits:
+    print('You really like bananas')
+if 'apple' in fav_fruits:
+    print('You really like apples')
+if 'pear' in fav_fruits:
+    print('You really like pears')
+if 'orange' in fav_fruits:
+    print('You really like oranges')
+if fruit in fav_fruits:
+    print(f'{fruit.capitalize()}, есть такой фрукт в списке любимых.')
+else:
+    print(f"{fruit.capitalize()}, такого нет в списке любимый фруктов.")
