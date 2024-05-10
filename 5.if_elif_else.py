@@ -1,4 +1,5 @@
-"""colors = ['green', 'yellow', 'red']
+"""
+colors = ['green', 'yellow', 'red']
 color = 'green'
 if color in colors:
     print(f"{color}, this color is in the list. You won 10 points.")
@@ -39,7 +40,8 @@ if tsvet in tsveta:
 else:
     print(f'{tsvet}, this color is not in the list')
 
-print('\n', '*** This part of the code is finished ***'*2, '\n')"""
+print('\n', '*** This part of the code is finished ***'*2, '\n')
+"""
 
 age = int(input("Input age (for example, 2):"))
 if age >= 0 and age < 2:
