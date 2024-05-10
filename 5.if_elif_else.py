@@ -1,4 +1,4 @@
-colors = ['green', 'yellow', 'red']
+"""colors = ['green', 'yellow', 'red']
 color = 'green'
 if color in colors:
     print(f"{color}, this color is in the list. You won 10 points.")
@@ -39,5 +39,42 @@ if tsvet in tsveta:
 else:
     print(f'{tsvet}, this color is not in the list')
 
+print('\n', '*** This part of the code is finished ***'*2, '\n')"""
+
+age = int(input("Input age (for example, 2):"))
+if age >= 0 and age < 2:
+    print("It's an Infant")
+elif age >= 2 and age < 4:
+    print("It's a Toddler")
+elif age >= 4 and age < 13:
+    print("It's a Kid or Baby")
+elif age >= 13 and age < 20:
+    print("It's a Teenager")
+elif age >= 20 and age < 25:
+    print("It's a Young adult age")
+elif age >= 25 and age < 55:
+    print("it's an Adult age")
+elif age >= 55 and age < 65:
+    print("It's a Senior-citizen age")
+elif age in range(65, 131):
+    print("It's an Elderly age!")
+elif age < 0:
+    print("Age can't be negative")
+
 print('\n', '*** This part of the code is finished ***'*2, '\n')
 
+ages = {"infant": (0, 2),
+        "toddler": (2, 4),
+        "child": (4, 13),
+        "teenager": (13, 20),
+        "young adult": (20, 25),
+        "adult": (25, 55),
+        "senior-citizen age": (55, 65),
+        "elderly": (65, 150)
+        }
+years = int(input("Enter your age: "))
+for age, (down, up) in ages.items():
+    if down <= years < up:
+        print(f"Ваш возраст соответствует категории: {age.title()}")
+
+print('\n', '*** This part of the code is finished ***'*2, '\n')
