@@ -1,4 +1,4 @@
-
+"""
 colors = ['green', 'yellow', 'red']
 color = 'green'
 if color in colors:
@@ -41,7 +41,7 @@ else:
     print(f'{tsvet}, this color is not in the list')
 
 print('\n', '*** This part of the code is finished ***'*2, '\n')
-
+"""
 
 age = int(input("Input age (for example, 2):"))
 if age >= 0 and age < 2:
