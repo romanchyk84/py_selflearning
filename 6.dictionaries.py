@@ -60,3 +60,12 @@ favorite_languages = {'jen': 'python',
 print(f"Sarah's favorite language is {favorite_languages['sarah'].title()}")
 lang = favorite_languages['sarah'].title()
 print(f"'{lang}' is Sarah's favorite language.")
+
+print('*'*50)
+
+# Обращение к значениям методом get()
+# print(favorite_languages['konor'])  # Такого ключа в словаря нет, в выводе получим ошибку.
+
+alien = {'color': 'blue', 'speed': 'slow'}
+point_value = alien.get('points', 'Значение points не назначено!')  # get('value', сообщение при отсутствии значения)
+print(point_value)
