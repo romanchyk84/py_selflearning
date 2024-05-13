@@ -32,4 +32,4 @@ else:
     # Пришелец двигается быстро
     x_increment = 3
 alien_2['x_position'] = alien_2['x_position'] + x_increment
-print(f"Новая позиция: {alien_2['x_position']}")
+print(f"New position: {alien_2['x_position']}")
