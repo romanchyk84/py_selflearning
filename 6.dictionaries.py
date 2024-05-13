@@ -1,5 +1,5 @@
 
-# Словари
+# Словари и операции с ними
 alien_0 = {'color': 'green', 'points': 5, 'key': 'value'}
 print(alien_0['color'])     # Вывводим значение по ключу color
 print(alien_0['points'])    # Выводим значение по ключу points
