@@ -26,3 +26,19 @@ print(f"Olya's favorite number is {fav_numbers['olya']}")
 print(f'\n', '*' * 5, 'Previous task using cycle for', '*' * 5, '\n')
 for key in fav_numbers:
     print(f"{key.title()}'s favorite number is {fav_numbers[key]}")
+
+# Создание Глоссария, словарь с типами данных и их значениями
+glossary = {'string': 'data type that represents strings',
+            'int': 'integer data type, whole numbers',
+            'float': 'data type that represents numbers with a decimal points',
+            'list': 'data type, represent collections of items, different types and can modify the elements in a list',
+            'tuple': 'data type, represents collections of items, different types. But it can\'t be modified!',
+            'dict': 'data type that represents collections of a "key-value" pairs',
+            }
+# Способ с двумя переменными (key) и (value)
+for key, value in glossary.items():
+    print(f'\n Data type: {key}')
+    print(f' Meaning: {value}')
+# Способ с использованием одной переменной (k)
+# for k in glossary:
+#     print(f'\nТип данных: {k} \nЗначение: {glossary[k]}')
