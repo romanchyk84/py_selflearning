@@ -42,3 +42,6 @@ for key, value in glossary.items():
 # Способ с использованием одной переменной (k)
 # for k in glossary:
 #     print(f'\nТип данных: {k} \nЗначение: {glossary[k]}')
+
+for d_type in glossary.keys():  # Перебор всех ключей в словаре Глоссарий
+    print(f'{d_type.upper()}')
