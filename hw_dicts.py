@@ -14,7 +14,7 @@ fav_numbers = {
     'roman': 5,
     'ilona': 10,
     'sasha': 15,
-    'maksim': 20,
+    'maksim': 25,
     'olya': 25,
     }
 print(f"Roman's favorite number is {fav_numbers['roman']}")
@@ -26,6 +26,8 @@ print(f"Olya's favorite number is {fav_numbers['olya']}")
 print(f'\n', '*' * 5, 'Previous task using cycle for', '*' * 5, '\n')
 for key in fav_numbers:
     print(f"{key.title()}'s favorite number is {fav_numbers[key]}")
+
+print('\n', '-' * 15, 'The end', '-' * 15, '\n')
 
 # Создание Глоссария, словарь с типами данных и их значениями
 glossary = {'string': 'data type that represents strings',
@@ -45,3 +47,32 @@ for key, value in glossary.items():
 
 for d_type in glossary.keys():  # Перебор всех ключей в словаре Глоссарий
     print(f'{d_type.upper()}')
+
+print('\n', '-' * 15, 'The end', '-' * 15, '\n')
+
+chisla = {
+    'roman': 5,
+    'ilona': 10,
+    'sasha': 15,
+    'maksim': 25,
+    'olya': 25,
+    }
+friends = ['maksim', 'olya']
+for man in chisla.keys():
+    if man in friends:
+        x = chisla[man]
+        print(f"{man.title()}, lyubit chsilo {x}")
+
+print('\n', '-' * 15, 'The end', '-' * 15, '\n')
+
+# Перебор ключей в определенном порядке (сортировка)
+favorite_languages = {'jen': 'python',
+                      'sarah': 'c',
+                      'edward': 'ruby',
+                      'phil': 'python',
+                      }
+for name in sorted(favorite_languages.keys()):  # A -> Z (ASC)
+    print(name.upper())
+
+for name in sorted(favorite_languages.keys(), reverse=True):    # Z -> A (DESC)
+    print(name.title())
