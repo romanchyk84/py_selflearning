@@ -76,3 +76,12 @@ for name in sorted(favorite_languages.keys()):  # A -> Z (ASC)
 
 for name in sorted(favorite_languages.keys(), reverse=True):    # Z -> A (DESC)
     print(name.title())
+
+print('\n', '-' * 15, 'The end', '-' * 15, '\n')
+
+print('The most popular languages are:')
+for lang in favorite_languages.values():    # Извлечение значений из словаря
+    print(f'\t{lang.title()}')
+
+for lanf in set(favorite_languages.values()):   # С помощью множества set() выводим только уникальные значения
+    print(f"'{lanf.title()}' is in a mentioned list")
