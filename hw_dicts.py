@@ -16,7 +16,7 @@ fav_numbers = {
     'sasha': 15,
     'maksim': 25,
     'olya': 25,
-    }
+}
 print(f"Roman's favorite number is {fav_numbers['roman']}")
 print(f"{fav_numbers['ilona']} is Ilona's favorite number")
 print(f"Sasha's favorite number is {fav_numbers['sasha']}")
@@ -56,7 +56,7 @@ chisla = {
     'sasha': 15,
     'maksim': 25,
     'olya': 25,
-    }
+}
 friends = ['maksim', 'olya']
 for man in chisla.keys():
     if man in friends:
@@ -74,14 +74,36 @@ favorite_languages = {'jen': 'python',
 for name in sorted(favorite_languages.keys()):  # A -> Z (ASC)
     print(name.upper())
 
-for name in sorted(favorite_languages.keys(), reverse=True):    # Z -> A (DESC)
+for name in sorted(favorite_languages.keys(), reverse=True):  # Z -> A (DESC)
     print(name.title())
 
 print('\n', '-' * 15, 'The end', '-' * 15, '\n')
 
 print('The most popular languages are:')
-for lang in favorite_languages.values():    # Извлечение значений из словаря
+for lang in favorite_languages.values():  # Извлечение значений из словаря
     print(f'\t{lang.title()}')
 
-for lanf in set(favorite_languages.values()):   # С помощью множества set() выводим только уникальные значения
+for lanf in set(favorite_languages.values()):  # С помощью множества set() выводим только уникальные значения
     print(f"'{lanf.title()}' is in a mentioned list")
+
+print(f'\n', '*' * 20, 'The end of this block', '*' * 20, '\n')
+
+glossar = {'string': 'data type that represents strings', 'int': 'integer data type, whole numbers',
+           'float': 'data type that represents numbers with a decimal points',
+           'list': 'data type, represent collections of items, different types and can modify the elements in a list',
+           'tuple': 'data type, represents collections of items, different types. But it can\'t be modified!',
+           'dict': 'data type that represents collections of a "key-value" pairs',
+           'set': 'data type that represents unordered collections of unique elements',
+           'sorted()': 'a built-in function that takes an iterable as its argument and returns a new sorted list',
+           'print()': 'a built-in function used to output data to the console',
+           'del': 'a keyword used to delete objects',
+           'strip(), lstrip(), rstrip()': 'a built-in string method used to remove leading and trailing whitespace '
+                                           '(spaces, tabs, newlines) from a string',
+           }
+# for key in glossar:
+#     print(f'{key.capitalize()} : {glossar[key]}')
+
+for k, v in glossar.items():
+    print(f"\n{k.capitalize()}: {v.capitalize()}")
+
+print(f'\n', '*' * 20, 'The end of this block', '*' * 20, '\n')
